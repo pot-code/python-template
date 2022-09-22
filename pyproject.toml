@@ -1,0 +1,28 @@
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[tool.poetry]
+name = "python-template"
+version = "0.1.0"
+description = ""
+authors = ["pot-code <136290354@qq.com>"]
+readme = "README.md"
+packages = [{ include = "python_template" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+black = "^22.8.0"
+mypy = "^0.971"
+pytest = "^7.1.3"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
